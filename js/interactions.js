@@ -1,6 +1,6 @@
 
 var randomNum = 0;
-var	guessNum = 0;
+var guessNum = 0;
 
 // updating the UI with new message
 function writeMessage(elementId, message, appendMessage) {
