@@ -2,6 +2,7 @@
 var randomNum = 0,
 	guessNum = 0;
 
+//changes words on screen; not on HTML
 function writeMessage(elementId, message, appendMessage) {
 	var elemToUpdate = document.getElementById(elementId);
 	if (appendMessage) {
@@ -11,12 +12,14 @@ function writeMessage(elementId, message, appendMessage) {
 	}
 };
 
+//new game, which includes a new random number and guessNum set to 0
 function newGame() {
 	randomNum = Math.floor(Math.random() * 100) + 1;
 	guessNum = 0;
 	writeMessage('guessList', '');
 }
 
+//method called to check if range of player input is allowed
 function guessRange(guess) {
 	return (guess > 0 && guess < 101);
 }
@@ -55,7 +58,7 @@ function playerGuessed() {
 		}
 	}
 
-
+//gets player's input 
 	document.getElementById('playerGuess').value = '';
 }
 

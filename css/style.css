@@ -37,9 +37,9 @@ p, h2, ol{
 
 input {
 	margin-top: 1rem;
-	border-radius: 1rem;
+	border-radius: 10px;  /*border can be in px*/
 	border-style: solid;
-	border-width: 1rem;
+	border-width: 10px;
 	border-color: #F05365;
 	width: 50%;
 	padding: 2rem;
@@ -50,10 +50,10 @@ input {
 .button {
 	margin-top: 1rem;
 	margin-bottom: 5rem;
-	border-radius: 1rem;
+	border-radius: 10px; /*border can be in px*/
 	background-color: #FABC2A;
 	border-style: solid;
-	border-width: 1rem;
+	border-width: 10px;
 	border-color: #F05365;
 	width: 50%;
 	padding: 2rem;
