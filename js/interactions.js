@@ -12,16 +12,11 @@ function writeMessage(elementId, message, appendMessage) {
 	}
 }
 
-// method called to check if range of player input is allowed
-function guessRange(guess) {
-	return (guess > 0 && guess < 101);
-}
-
 function playerGuessed() {
 	var instructions = document.getElementById('instructions');
 	var playerGuessed = document.getElementById('playerGuess').value;
 	var guessList = document.getElementById('guessList');
-	if (playerGuessed.length == 0 || ! guessRange(playerGuessed)) {
+	if (playerGuessed.length == 0 || playerGuessed < 0 || playerGuessed > 100) {
 		// when player enters nothing or a number that isn't in the range
 		writeMessage('instructions', '<p>No, silly! Enter a number between 1-100 and press the Guess button!</p>');
 	} else if (playerGuessed.indexOf('.') != -1) {
