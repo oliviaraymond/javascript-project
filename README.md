@@ -1,5 +1,6 @@
 # javascript-project
 JS Project 
+
 Guessing Game
 Randomly generate a number from 1-100. Prompt the user to guess. Continue the game until the user guesses correctly. Include at least two of the following enhancements:
 
