@@ -1,6 +1,6 @@
 
-var randomNum = 0,
-		guessNum = 0;
+var randomNum = 0;
+var	guessNum = 0;
 
 // updating the UI with new message
 function writeMessage(elementId, message, appendMessage) {
@@ -10,7 +10,7 @@ function writeMessage(elementId, message, appendMessage) {
 	} else {
 		elemToUpdate.innerHTML = message;
 	}
-};
+}
 
 // method called to check if range of player input is allowed
 function guessRange(guess) {
@@ -53,8 +53,8 @@ function playerGuessed() {
 
 // new game, which includes a new random number and guessNum set to 0
 function newGame() {
-	randomNum = Math.floor(Math.random() * 100) + 1;
 	guessNum = 0;
+	randomNum = Math.floor(Math.random() * 100) + 1;
 	writeMessage('guessList', '');
 }
 
