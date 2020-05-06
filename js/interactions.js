@@ -18,8 +18,8 @@ function guessRange(guess) {
 }
 
 function playerGuessed() {
-	var playerGuessed = document.getElementById('playerGuess').value;
 	var instructions = document.getElementById('instructions');
+	var playerGuessed = document.getElementById('playerGuess').value;
 	var guessList = document.getElementById('guessList');
 	if (playerGuessed.length == 0 || ! guessRange(playerGuessed)) {
 		// when player enters nothing or a number that isn't in the range
