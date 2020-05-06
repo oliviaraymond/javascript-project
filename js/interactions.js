@@ -39,7 +39,7 @@ function playerGuessed() {
 
 		if (playerGuessed == randomNum) {
 			// the player got the number correct
-			writeMessage('instructions', '<p>YOU GOT IT! It took you ' + guessNum +' guesses to get ' + randomNum + '. Play again! </p>');
+			writeMessage('instructions', '<p><img src="img/youwin.jpg"><br>YOU GOT IT! It took you ' + guessNum +' guesses to get ' + randomNum + '. Play again! </p>');
 			newGame();
 		} else if (playerGuessed < randomNum) {
 			// when the player needs to guess a higher number
@@ -58,7 +58,7 @@ function playerGuessed() {
 		}
 	}
 
-//gets player's input 
+//gets player's input
 	document.getElementById('playerGuess').value = '';
 }
 
