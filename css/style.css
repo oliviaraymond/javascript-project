@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300|Raleway:300&display=swap');
+
+html{
+	font-size:10px;
+	max-width:96rem; /* Math to covert pixels to rem: 960 px / 10px = 96 rem */
+	margin: auto;
+}
+
+main, h1, footer {
+	background-color: #F2EDEB;
+	font-family: 'Lato', sans-serif;
+	font-weight:100;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+h1 {
+	color: #925E78;
+	font-size: 7rem;
+	text-align: center;
+	padding: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+p, h2, ol{
+	font-family: 'Raleway', sans-serif;
+	font-size: 3rem;
+	text-align: left;
+	padding-left: 3rem;
+	margin: 1rem;
+	margin-top: 0;
+	margin-bottom: 2rem;
+	color: #BD93BD;
+}
+
+input {
+	margin-top: 1rem;
+	border-radius: 1rem;
+	border-style: solid;
+	border-width: 1rem;
+	border-color: #F05365;
+	width: 50%;
+	padding: 2rem;
+	font-family: 'Lato', sans-serif;
+	font-size: 6rem;
+}
+
+.button {
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+	border-radius: 1rem;
+	background-color: #FABC2A;
+	border-style: solid;
+	border-width: 1rem;
+	border-color: #F05365;
+	width: 50%;
+	padding: 2rem;
+	font-size: 5rem;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+input, .button {
+	margin-left: 18rem;
+}
+
+footer {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	text-align: center;
+	margin: 2rem;
+}
+
+footer p{
+	font-weight: bolder;
+	font-size: 1.4rem;
+	color: #925378;
+}
+
+section{
+	padding: 4rem;
+	padding-bottom: 0;
+	display: grid;
+}
+
+article:first-child{
+	grid-column: 1;
+}
+
+input {
+	grid-row: 2;
+}
+
+article:nth-child(2){
+	grid-row: 2;
+	padding-bottom: 0;
+}
+
+article:last-child{
+	grid-row: 4;
+	padding-top: 0;
+}
